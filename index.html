@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<title>Pokedex</title>
+</head>
+<body>
+
+    <div class="container mt-3 rounded">
+        <div class="row justify-content-md-center">
+          <div class="col-5">
+            <div style="background-color: rgb(41, 41, 41);" class="card">
+
+                <div class="imgwrappa">
+                <img id="update_img" style="background-color: #000;" class="card-img-top" src="#" alt="Card image cap">
+                </div>
+
+
+                <div class="card-body">
+                  <h4 id ='update_name' class="card-title text-white text-center">Pokemon name</h4>
+                  <div class="row justify-content-around mt-4">
+                      <div id='type1' style="background-color: black; border-radius: 8px; color: white;" class="col-3 text-center">t1
+                      </div>
+                      <div id="type2" style="background-color: black; border-radius: 8px; color: white;" class="col-3 text-center">t2
+                      </div>
+                  </div>
+
+                  <div class="row justify-content-around mt-4">
+                    <div class="col-3 text-center">
+                        <h5 id='pokeweight' style="color: white;">api.weight</h5>
+                        <p class="text-secondary">Weight</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <h5 id="pokeheight" style="color: white">api.height</h5>
+                        <p class="text-secondary">Height</p>
+                    </div>
+                  </div>
+
+                  <h5 class="text-center text-white mt-2">Base Stats</h5>
+
+                  <div class="row mt-4">
+                    <div style="font-size: small;" class="col-3 text-center">
+                        <p style="line-height: 1rem;" class="text-secondary">HP</p>
+                    </div>
+                    <div id="base_hp" style="background-color: white; height: 3vh; font-size: small; line-height: 1rem;" class="col-8 rounded">hpnum/300</div>
+                  </div>
+                  <div class="row">
+                    <div style="font-size: small;" class="col-3 text-center">
+                        <p style="line-height: 1rem;" class="text-secondary">ATK</p>
+                    </div>
+                    <div id="base_atk" style="background-color: white; height: 3vh; font-size: small; line-height: 1rem;" class="col-8 rounded">atknum/300</div>
+                  </div>
+                  <div class="row">
+                    <div style="font-size: small;" class="col-3 text-center">
+                        <p style="line-height: 1rem;" class="text-secondary">DEF</p>
+                    </div>
+                    <div id="base_def" style="background-color: white; height: 3vh; font-size: small; line-height: 1rem;" class="col-8 rounded">defnum/300</div>
+                  </div>
+                  <div class="row">
+                    <div style="font-size: small;" class="col-3 text-center">
+                        <p style="line-height: 1rem;" class="text-secondary">SPD</p>
+                    </div>
+                    <div id="base_spd" style="background-color: white; height: 3vh; font-size: small; line-height: 1rem;" class="col-8 rounded">spdnum/300</div>
+                  </div>
+
+                  <div class="search-container mx-auto col-md-5 col-sm-5">
+                          <input class="form-control" type="text" placeholder="Find a Pokemon" id ="search_poke">
+                          <button onclick="setRandomColor()" class="btn-search" id="search-button">
+                            <i class="fa fa-search" aria-hidden='true'></i>
+                          </button>
+                  </div>
+                  
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    </div>
+        
+
+<script src="js.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
